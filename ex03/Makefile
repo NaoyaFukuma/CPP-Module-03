@@ -1,11 +1,11 @@
-NAME = Account
+NAME = DiamondTrap
 
 
 CXX = c++
-CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -MMD -MP
+CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -MMD -MP -Wshadow -Wno-shadow
 CPPFLAGS = -Iincludes
 
-SRCS = tests.cpp Account.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 VPATH = srcs
 
 OBJSDIR = objs
