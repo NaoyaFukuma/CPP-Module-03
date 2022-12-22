@@ -6,22 +6,29 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:31:51 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/22 16:53:52 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/23 00:39:41 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int	main()
 {
-	std::cout << "\e[33m[Attention] This game is incomplete. Please look forward to the next one.\e[m" << std::endl;
-	ClapTrap default_constractor_clap("nfukuma");
-	ClapTrap copy_constractor_clap(default_constractor_clap);
-
-	for (int i = 0; i < 11; ++i)
+	std::cout << "\e[33mCheck the order in which constructors and destructors are called in the derived class.\e[m" << std::endl;
 	{
-		std::cout << "Attack! cout " << i << std::endl;
-		default_constractor_clap.attack("nfukuma2");
-		copy_constractor_clap.attack("nfukuma2(from copy)");
+		ScavTrap instance( "test" );
+	}
+	std::cout << "\n\e[33mNext, let's call a member function from a derived class.\n" << \
+		"We can see that functions of the base class (ClapTrap) and functions of the derived class (ScavTrap) are used differently.\e[m" << std::endl;
+	{
+		ScavTrap instance( "test2" );
+		instance.attack("Kamehameha wave");
+		instance.takeDamage(10);
+		instance.beRepaired(10);
+		for (int i = 0; i < 11; ++i)
+			instance.takeDamage(10);
+		for (int i = 0; i < 49; ++i)
+			instance.beRepaired(i + 1);
+		instance.guardGate();
 	}
 }

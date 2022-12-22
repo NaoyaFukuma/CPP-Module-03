@@ -1,11 +1,11 @@
-NAME = claptrap
+NAME = ScavTrap
 
 
 CXX = c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror -MMD -MP
 CPPFLAGS = -Iincludes
 
-SRCS = main.cpp ClapTrap.cpp
+SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
 VPATH = srcs
 
 OBJSDIR = objs
