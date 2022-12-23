@@ -6,7 +6,7 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:31:51 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/23 14:34:00 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/23 14:43:22 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(void)
 	ClapTrap copy_constractor_clap(default_constractor_clap);
 	for (int i = 0; i < 11; ++i)
 	{
-		std::cout << "Attack! cout " << i << std::endl;
+		std::cout << "Attack! count " << i << std::endl;
 		default_constractor_clap.attack("Nobody");
 		copy_constractor_clap.attack("Nobody(from copy)");
 	}
