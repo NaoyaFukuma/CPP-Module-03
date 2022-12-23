@@ -6,14 +6,14 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:32:20 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/23 00:36:57 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/23 14:32:31 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap(std::string name)
-	: _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+	: _name(name), _hitPoints(10), _energyPoints(10), _attackDamage()
 {
 	std::cout << "ClapTrap [" << _name << "] is born!" << std::endl;
 }

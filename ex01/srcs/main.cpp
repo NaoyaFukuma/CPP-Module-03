@@ -6,11 +6,12 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:31:51 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/23 01:59:25 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/23 14:37:28 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+# include <iostream>
 
 int	main()
 {

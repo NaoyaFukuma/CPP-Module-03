@@ -6,11 +6,12 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 23:34:37 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/23 00:10:15 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/23 14:37:34 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+# include <iostream>
 
 ScavTrap::ScavTrap(std::string name)
 	: ClapTrap(name)

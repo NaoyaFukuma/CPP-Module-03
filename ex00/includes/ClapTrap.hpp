@@ -6,7 +6,7 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:32:08 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/22 16:15:44 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/23 14:35:02 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define CLAPTRAP_HPP
 
 # include <iostream>
-
 class ClapTrap
 {
   private:

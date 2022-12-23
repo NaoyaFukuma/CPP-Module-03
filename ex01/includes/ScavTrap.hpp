@@ -6,7 +6,7 @@
 /*   By: nfukuma <nfukuma@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 23:34:01 by nfukuma           #+#    #+#             */
-/*   Updated: 2022/12/23 00:00:43 by nfukuma          ###   ########.fr       */
+/*   Updated: 2022/12/23 14:37:15 by nfukuma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define SCAVTRAP_HPP
 
 # include "ClapTrap.hpp"
+# include <iostream>
 
 class ScavTrap : public ClapTrap
 {
